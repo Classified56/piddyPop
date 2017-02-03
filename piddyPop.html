@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <title>Piddy-Pop</title>
+    <link rel="stylesheet" type="text/css" href="piddyPop.css">
+    <script type="text/javascript" src="assets/js/paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="canvas">
+        var path = new Path();
+        path.strokeColor = '#8404e5';
+        var start = new Point(100,100);
+        path.moveTo(start);
+        path.lineTo(start + [200, -50]);
+        
+        var circle = new Path.Circle(new Point(400, 300), 20);
+        circle.fillColor = 'purple';
+        
+    </script>
+</head>
+<body>
+    <canvas id="canvas" resize></canvas>
+</body>
+</html>
